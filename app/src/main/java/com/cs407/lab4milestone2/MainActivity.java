@@ -84,9 +84,9 @@ public class MainActivity extends AppCompatActivity {
         TextView altTextView = (TextView) findViewById(R.id.altTextView);
         TextView accTextView = (TextView) findViewById(R.id.accTextView);
         latTextView.setText("Latitude: " + location.getLatitude());
-        latTextView.setText("Longitude: " + location.getLongitude());
-        latTextView.setText("Altitude: " + location.getAltitude());
-        latTextView.setText("Accuracy: " + location.getAccuracy());
+        lonTextView.setText("Longitude: " + location.getLongitude());
+        altTextView.setText("Altitude: " + location.getAltitude());
+        accTextView.setText("Accuracy: " + location.getAccuracy());
 
         Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
 
